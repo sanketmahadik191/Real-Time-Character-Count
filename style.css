@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #df4f1f;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    min-width: 280px;
+    border: 2px solid rgb(255, 177, 177);
+    border-radius: 1.2rem;
+    padding: 2rem 1.2rem;
+    box-shadow: 13px 17px 16px 4px rgba(61, 58, 49, 0.93);
+    background-color: #fff9b6;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0.8rem;
+    border-radius: 10px;
+    background-color: #daeafd;
+    color: rgb(187, 130, 239);
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #454E9E;
+    font-size: 0.8rem;
+}
+
+.counts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+}
+
+span {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.6rem;
+    transition: all 0.6s ease-in-out;
+    text-shadow: 4px -2px 5px #a1a1a1;
+}
+
+.total {
+    color: rgb(18, 19, 18);
+    z-index: 10;
+}
+
+.remains {
+    color: rgb(28, 26, 26);
+    z-index: 10;
+}
+
+h4 {
+    font-size: 0.6rem;
+    color: blue;
+    text-align: center;
+    margin-top: 1.1rem;
+}
+
+h4 span a {
+    color: rgb(230, 174, 141);
+    font-size: 0.8rem;
+    transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 30px;
+    }
+    .container {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h2 {
+        font-size: 1rem;
+    }
+    textarea {
+        font-size: 0.8rem;
+    }
+    textarea::placeholder {
+        font-size: 0.86rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
